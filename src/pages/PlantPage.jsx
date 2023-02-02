@@ -25,14 +25,14 @@ export const PlantPage = () => {
   return (
     <>
         <div className="row rows-cols-1">
-          <div className="col-7">
+          <div className="col-6">
             <h1>Plant page</h1>
           </div>
-          <div className="form-switch col-1 mt-3">
-            <input className="form-check-input" type="checkbox"  onChange={onFilterFruit} checked={filterFruit} /> Fruit
+          <div className="form-switch col-2 mt-3">
+            <input className="form-check-input" type="checkbox"  onChange={onFilterFruit} checked={filterFruit} /> Fruit Filter
           </div>
           <div className="form-switch col-2 mt-3">
-            <input className="form-check-input" type="checkbox"  onChange={onFilterVegetable} checked={filterVegetable} /> Vegetable
+            <input className="form-check-input" type="checkbox"  onChange={onFilterVegetable} checked={filterVegetable} /> Vegetable Filter
           </div>
 
           <div className="col-2 p-2 text-end">

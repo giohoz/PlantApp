@@ -15,8 +15,8 @@ export const PlantCard = ( { id,
             <div className="col animate__animated animate__fadeIn">
                 <div className="card">
                     <div className="row no-gutters">
-                        <div className="col-4">
-                            <img src={plantImageUrl} className="card-img" alt={name}/>
+                        <div className="col-4 mt-4 ml-1">
+                            <img src={plantImageUrl} className="img-thumbnail" alt={name}/>
                         </div>
 
                         <div className="col-8">
