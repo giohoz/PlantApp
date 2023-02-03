@@ -44,7 +44,7 @@ const PlantForm = ( { name,type,description, onInputChange, onFormSubmit } ) => 
                 </>
             }
             <hr />
-            <button type="submit" className="btn btn-outline-success mt-1 mb-2"> {(location.pathname == '/addPlant')? 'Add' : 'Edit'}</button>
+            <button type="submit" className="btn btn-outline-success mt-1 mb-2"> {(location.pathname == '/addPlant')? 'Add' : 'Save'}</button>
         </form>
     </>
   )
