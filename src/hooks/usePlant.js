@@ -3,7 +3,7 @@ import { plantReducer } from "../helpers/PlantReducer";
 
 
 const init = () => {
-    return (localStorage.getItem('plants') != undefined)? JSON.parse(localStorage.getItem('plants')) :[];//El opuesto de JSON.stringify
+    return (localStorage.getItem('plants') != undefined)? JSON.parse(localStorage.getItem('plants')) :[];
 }
 
 export const usePlant = () => {
@@ -12,7 +12,7 @@ export const usePlant = () => {
     const [plants, dispatch] = useReducer( plantReducer, [], init);
     
     useEffect(() => {
-        localStorage.setItem('plants', JSON.stringify( plants ));//Es un API que viene directamente de JS
+        localStorage.setItem('plants', JSON.stringify( plants ));
     
     }, [plants]);
     
@@ -47,8 +47,6 @@ export const usePlant = () => {
         plants,
         handleNewPlant,
         handleDeletePlant,
-        handleTogglePlant,
-        // todosCount: todos.length,
-        // pendingTodosCount: todos.filter( todo => !todo.done ).length,     
+        handleTogglePlant,   
     }
 }

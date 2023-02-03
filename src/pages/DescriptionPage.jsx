@@ -22,7 +22,6 @@ export const DescriptionPage = () => {
 	const { handleDeletePlant } = useContext( PlantContext );
 
 	const onDelete = () =>{
-		console.log( id.toString() )
 		handleDeletePlant(plant.id);
 		navigate('/');
 

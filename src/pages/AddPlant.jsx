@@ -42,7 +42,6 @@ export const AddPlant = () => {
 
         handleNewPlant( newPlant );
 
-        console.log( type, description );
 
         onResetForm();
         navigate(-1);

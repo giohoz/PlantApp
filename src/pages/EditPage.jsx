@@ -48,7 +48,6 @@ export const EditPage = ( ) => {
             update_date: today
         }
 
-        console.log( newPlant );
 
         handleTogglePlant( newPlant );
         
